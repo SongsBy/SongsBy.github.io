@@ -9672,3 +9672,75 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+.project.project-banner {
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background-position: center; }
+
+.resume-wrap .project-title {
+  gap: 6px 10px; }
+  .resume-wrap .project-title h2 {
+    margin-bottom: 0; }
+
+.resume-wrap .project-summary {
+  font-size: 16px;
+  color: #444;
+  margin: 10px 0 18px; }
+
+.resume-wrap .project-block {
+  margin-bottom: 16px; }
+
+.resume-wrap .project-label {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #3e64ff;
+  margin-bottom: 8px; }
+
+.resume-wrap .tech-stack {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px; }
+  .resume-wrap .tech-stack li {
+    background: #fff;
+    border: 1px solid #c5d0ff;
+    color: #3e64ff;
+    border-radius: 999px;
+    padding: 2px 12px;
+    font-size: 13px;
+    font-weight: 600; }
+
+.resume-wrap .feature-list {
+  padding-left: 18px;
+  margin: 0;
+  color: #555; }
+  .resume-wrap .feature-list li {
+    line-height: 1.7; }
+
+.resume-wrap .project-point {
+  background: #fff;
+  border: 1px solid #e3e8ff;
+  border-left: 3px solid #3e64ff;
+  padding: 10px 14px;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px; }
+
+.resume-wrap .award-badge {
+  display: inline-block;
+  background: #fff4e0;
+  color: #d97a00;
+  border-radius: 999px;
+  padding: 2px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 6px; }
+
+@media (max-width: 767.98px) {
+  .project.project-banner .overlay,
+  .project.project-banner .text {
+    display: none !important; } }
