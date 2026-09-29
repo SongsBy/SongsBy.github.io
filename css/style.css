@@ -9730,6 +9730,10 @@ textarea.form-control {
   color: #555;
   margin-bottom: 20px; }
 
+.progress-circle .progress-value sup {
+  top: -0.1em;
+  margin-left: 2px; }
+
 .resume-wrap .award-badge {
   display: inline-block;
   background: #fff4e0;
@@ -9743,4 +9747,20 @@ textarea.form-control {
 @media (max-width: 767.98px) {
   .project.project-banner .overlay,
   .project.project-banner .text {
-    display: none !important; } }
+    display: none !important; }
+  .ftco-about .img-about .img {
+    height: auto;
+    aspect-ratio: 3 / 4;
+    background-position: center top; }
+  .ftco-about ul.about-info li span {
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: anywhere; }
+    .ftco-about ul.about-info li span:first-child {
+      flex: 0 0 90px;
+      width: 90px; } }
+
+@media (max-width: 374.98px) {
+  .ftco-navbar-light .navbar-brand,
+  .ftco-navbar-light.scrolled .navbar-brand {
+    font-size: 22px; } }
