@@ -2,9 +2,10 @@
 <html lang="ko">
 
 <head>
-	<title>크로스플랫폼 개발자 송정훈</title>
+	<title>Flutter 개발자 송정훈</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Flutter 앱 개발자 송정훈의 포트폴리오. 산돌이 배포·유지보수, 식사부장관 고객용·사장님용 앱 모노레포, 리비온 디자인 시스템.">
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
@@ -39,19 +40,16 @@
 				<ul class="navbar-nav nav ml-auto">
 					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
 					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-					<li class="nav-item"><a href="#education-section" class="nav-link"><span>Education</span></a></li>
-					<li class="nav-item"><a href="#awards-section" class="nav-link"><span>Awards</span></a></li>
 					<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
-					<li class="nav-item"><a href="#side-projects-section" class="nav-link"><span>Side
-								Projects</span></a>
-					</li>
-					<li class="nav-item"><a href="#blog-section" class="nav-link"><span>My Blog</span></a></li>
+					<li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
+					<li class="nav-item"><a href="#experience-section" class="nav-link"><span>Experience</span></a></li>
+					<li class="nav-item"><a href="#blog-section" class="nav-link"><span>Blog</span></a></li>
 					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
-	<section class="hero-wrap js-fullheight">
+	<section class="hero-wrap js-fullheight" id="home-section">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
@@ -63,10 +61,11 @@
 							<span class="txt-rotate" data-period="500"
 								data-rotate='["크로스플랫폼 개발자", "안드로이드 개발자", "스타트업 개발자"]'></span>
 						</h2>
+						<p class="mt-4"><a href="files/songjunghoon-resume.pdf" target="_blank"
+								class="btn btn-primary btn-outline-primary py-3 px-4">이력서 PDF</a></p>
 					</div>
 				</div>
 			</div>
-		</div>
 		</div>
 		<div class="mouse">
 			<a href="#" class="mouse-icon">
@@ -75,7 +74,7 @@
 		</div>
 	</section>
 
-	<section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
+	<section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb goto-here" id="about-section">
 		<div class="container">
 			<div class="row d-flex no-gutters">
 				<div class="col-md-6 col-lg-6 d-flex">
@@ -91,7 +90,10 @@
 						<div class="col-md-12 heading-section ftco-animate">
 							<h1 class="big">About</h1>
 							<h2 class="mb-4">About Me</h2>
-							<p>Flutter로 iOS와 Android를 함께 만드는 크로스플랫폼 앱 개발자 송정훈입니다. 사용자 경험(UX)을 고려한 직관적인 UI를 구현하고, 상태 관리와 아키텍처 설계부터 앱 배포까지 실무형 프로젝트를 지향합니다.</p>
+							<p>Flutter로 iOS와 Android 앱을 만드는 송정훈입니다. 팀 프로젝트에서는 주로 Flutter 앱을 혼자 맡아
+								화면, 상태 관리, API 연동, 로그인까지 담당해 왔습니다.</p>
+							<p>백엔드 팀과 API 규약을 맞추고, 연동 중 문제가 생기면 재현 조건과 확인한 내용을 문서로 정리해 전달합니다.
+								팀이 함께 지켜야 할 규칙은 테스트로 만들어 두는 편입니다.</p>
 							<ul class="about-info mt-4 px-md-0 px-2">
 								<li class="d-flex"><span>Name:</span> <span>송정훈</span></li>
 								<li class="d-flex"><span>Address:</span> <span>경기도 군포시 당동</span></li>
@@ -115,38 +117,154 @@
 		</div>
 	</section>
 
-	<section class="ftco-section ftco-no-pb ftco-counter img" id="section-counter">
-		<div class="container-fluid px-md-5">
-			<div class="row d-md-flex align-items-center">
-				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18 shadow">
-						<div class="text">
-							<strong class="number" data-number="14">0</strong>
-							<span>개인 · 팀 프로젝트</span>
+	<section class="ftco-section" id="projects-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Projects</h1>
+					<h2 class="mb-4">대표 프로젝트</h2>
+					<p>프로젝트마다 제가 맡은 범위, 해결한 문제, 지금 어디까지 완성됐는지를 함께 적었습니다.</p>
+				</div>
+			</div>
+
+			<!-- 산돌이 -->
+			<article class="featured-project ftco-animate">
+				<div class="fp-image" style="background-image: url(images/side-sandori.jpg);" role="img" aria-label="산돌이 앱 화면"></div>
+				<div class="fp-body resume-wrap">
+					<span class="date">2025.07 - 운영 중</span>
+					<div class="project-title d-flex flex-wrap align-items-center">
+						<h2>산돌이 - 한국공학대학교 캠퍼스 생활 정보 앱</h2>
+						<a class="btn btn-outline-secondary" target="_blank" href="https://github.com/SongsBy/Sandori">Github</a>
+					</div>
+					<span class="position">팀 산돌 · Flutter 1명(본인) · BE 3명 · 기획/디자인 1명</span>
+					<p class="project-summary">학식, 셔틀버스, 빈 강의실, 공지사항처럼 여러 곳에 흩어진 학교생활 정보를 앱 하나에서 보는 한국공학대학교 학생용 앱입니다. 2026년 5월에 배포했고, 지금도 학생 피드백을 받아 고치고 있습니다.</p>
+					<div class="project-block">
+						<div class="project-label">내가 한 일</div>
+						<ul class="feature-list">
+							<li>Flutter 앱 전담. 학식, 셔틀 시간표, 공지사항, 조직도 등 앱 전체 화면과 API 연동</li>
+							<li>네이버 지도에 빈 강의실을 표시하고 현재 위치에서 가까운 순으로 정렬</li>
+							<li>Keycloak 로그인 연동, 로그인·회원가입 웹 페이지 UI 제작</li>
+							<li>스토어 등록 요건(개인정보처리방침, 계정 삭제) 대응과 출시 후 유지보수</li>
+							<li>기능별 폴더 안을 data / domain / presentation 3계층으로 구성</li>
+						</ul>
+					</div>
+					<div class="project-block">
+						<div class="project-label">기술 스택</div>
+						<ul class="tech-stack">
+							<li>Flutter</li><li>Riverpod</li><li>Dio · Retrofit</li><li>GoRouter</li><li>freezed</li><li>Keycloak</li><li>Naver Map</li>
+						</ul>
+					</div>
+					<div class="project-point"><b>배포 후 겪은 문제</b> · 릴리스 APK에서만 카카오 로그인이 실패했습니다. AndroidManifest에 INTERNET 권한이 빠져 있었고, taskAffinity 설정 때문에 로그인 후 앱으로 돌아오는 리다이렉트가 유실되고 있었습니다. 둘을 고쳐 해결했습니다.</div>
+					<div class="project-point"><b>세션 유지</b> · 앱을 오래 켜 두면 로그인이 풀리는 문제가 있어, 토큰 만료 전에 미리 갱신하고 갱신은 한 번에 하나만 실행되게 바꿨습니다. 서버가 invalid_grant를 돌려줄 때만 토큰을 지우도록 해서 일시적인 네트워크 오류로 로그아웃되는 일을 막았습니다.</div>
+					<div class="project-point"><b>조직도 검색</b> · 서버 검색 API가 완전 일치만 지원해 이름 일부로는 찾을 수 없었습니다. 조직도 전체를 받아 기기 안에서 부분 일치로 거르게 바꿔 입력 즉시 결과가 나옵니다.</div>
+					<div class="project-status">진행 상태 · 화면 구현 완료 · 서버 연동 완료 · 2026.05 배포 후 업데이트 중</div>
+				</div>
+			</article>
+
+			<!-- 식사부장관 -->
+			<article class="featured-project ftco-animate">
+				<div class="fp-image" style="background-image: url(images/side-siksabu.jpg);" role="img" aria-label="식사부장관 앱 화면"></div>
+				<div class="fp-body resume-wrap">
+					<span class="date">2026.07 - 진행 중</span>
+					<div class="project-title d-flex flex-wrap align-items-center">
+						<h2>식사부장관 - QR 결제 기반 식사 플랫폼</h2>
+						<a class="btn btn-outline-secondary" target="_blank" href="https://github.com/SongsBy/SIksabu_FE">Github</a>
+						<a class="btn btn-outline-secondary" href="siksabu.html">문제 해결 과정</a>
+					</div>
+					<span class="position">모두의창업 · 공동대표 겸 Flutter 1명(본인) · BE 1명</span>
+					<p class="project-summary">공단 근처 직장인이 식당을 찾고, QR로 결제하고, 식권을 쓰는 과정을 앱 하나로 끝내는 서비스입니다. 근로자가 쓰는 고객용 앱과 식당이 쓰는 사장님용 앱으로 나뉩니다.</p>
+					<div class="project-block">
+						<div class="project-label">내가 한 일</div>
+						<ul class="feature-list">
+							<li>공동대표로 기능 범위와 일정을 정하고, 개발 전에 백엔드와 API 규칙(에러 응답, 토큰, 페이지네이션)부터 합의</li>
+							<li>고객용 앱과 사장님용 앱을 하나의 저장소(Melos)로 묶어 로그인, 네트워크, 공통 UI를 두 앱이 함께 쓰도록 구성</li>
+							<li>QR 결제: 카메라 스캔, 갤러리 사진 속 QR 인식, 내 QR을 띄울 때 화면 밝기 자동 조절</li>
+							<li>Keycloak 로그인과, 로그인하지 않은 사용자를 로그인 화면으로 보내는 go_router redirect</li>
+							<li>고객용 13개, 사장님용 9개 기능 화면과 API 14개 연동</li>
+						</ul>
+					</div>
+					<div class="project-block">
+						<div class="project-label">기술 스택</div>
+						<ul class="tech-stack">
+							<li>Flutter</li><li>Melos</li><li>Riverpod 3</li><li>go_router</li><li>Dio · Retrofit</li><li>freezed</li><li>Keycloak</li>
+						</ul>
+					</div>
+					<div class="project-point"><b>두 번째 앱이 생겼을 때</b> · 고객용 앱을 단일 프로젝트로 만들던 중에 사장님용 앱이 추가됐습니다. 앱 2개와 공유 패키지 core(인증·네트워크·공통 모델), ui_kit(디자인 토큰·공통 위젯)으로 나눈 모노레포로 전환했고, 이후 지갑 API 규약이 바뀌었을 때 두 앱의 결제 화면을 한 커밋에서 함께 고칠 수 있었습니다. 전환 직후 아이콘과 폰트가 안 나오던 문제는 패키지 경로가 빠진 게 원인이어서 경로를 한곳에서 관리하게 고치고 회귀 테스트를 남겼습니다. 자세한 과정은 <a href="siksabu.html">별도 페이지</a>에 적었습니다.</div>
+					<div class="project-status">진행 상태 · 화면 구현 진행 중 · 서버 연동 진행 중 · 스토어 출시 전</div>
+				</div>
+			</article>
+
+			<!-- 다이버바 -->
+			<article class="featured-project ftco-animate">
+				<div class="fp-image" style="background-image: url(images/side-diverba.jpg);" role="img" aria-label="다이버바 앱 화면"></div>
+				<div class="fp-body resume-wrap">
+					<span class="date">2026.03 - 2026.09</span>
+					<div class="project-title d-flex flex-wrap align-items-center">
+						<h2>다이버바 - AI 가상 피팅 앱</h2>
+						<a class="btn btn-outline-secondary" target="_blank" href="https://github.com/2026-TU-Capstone-Project/Frontend">Github</a>
+					</div>
+					<span class="position">한국공학대학교 캡스톤 디자인(졸업작품) · Flutter 1명(본인) · BE 3명</span>
+					<p class="project-summary">온라인으로 산 옷이 몸에 안 맞아 반품하는 일을 줄이려고, 사기 전에 가상으로 입어 볼 수 있게 만든 앱입니다. 네 번의 데모 발표를 거쳐 2026년 9월 최종 발표를 마쳤습니다.</p>
+					<div class="project-block">
+						<div class="project-label">내가 한 일</div>
+						<ul class="feature-list">
+							<li>Flutter 앱 전담. 가상 피팅룸, 옷장, 패션 피드, AI 채팅 검색 등 앱 전체 화면 개발 (Riverpod, MVVM)</li>
+							<li>백엔드 3명이 각자 만든 API를 혼자 받아 연동. 명세와 실제 동작이 다른 부분(HTTP 메서드, 빠진 파라미터 등)은 문서로 정리해 전달하고 함께 맞춤</li>
+							<li>가상 피팅 결과가 나오기까지 시간이 걸려서, SSE로 진행 상황을 받아 화면에 표시</li>
+							<li>카카오·구글 로그인, 토큰 보안 저장</li>
+						</ul>
+					</div>
+					<div class="project-block">
+						<div class="project-label">기술 스택</div>
+						<ul class="tech-stack">
+							<li>Flutter</li><li>Riverpod (MVVM)</li><li>Dio · Retrofit</li><li>SSE</li><li>SecureStorage</li><li>Kakao · Google Login</li>
+						</ul>
+					</div>
+					<div class="project-point"><b>토큰 갱신</b> · 토큰이 만료돼 여러 요청이 한꺼번에 실패해도 토큰 갱신은 한 번만 하고, 나머지 요청은 기다렸다가 다시 보내도록 처리했습니다.</div>
+					<div class="project-point"><b>415 오류</b> · GET 요청에서 서버 오류(415)가 났습니다. 요청 헤더에 불필요한 Content-Type이 붙는 게 원인이어서 공통 Dio 설정에서 제거했습니다.</div>
+					<div class="project-point"><b>협업 방식</b> · 세 명의 API를 혼자 받다 보니 요청이 몰려서, 말로 주고받던 수정 사항을 문서로 정리해 한 번에 전달하는 방식으로 바꿨습니다.</div>
+					<div class="project-status">진행 상태 · 화면 구현 완료 · 서버 연동 완료 · 최종 발표 완료(스토어 미출시)</div>
+				</div>
+			</article>
+
+			<h3 class="more-projects-title ftco-animate">그 밖의 프로젝트</h3>
+			<div class="row">
+				<div class="col-lg-4 col-md-6 d-flex mb-4 ftco-animate">
+					<div class="mini-project">
+						<div class="mp-image" style="background-image: url(images/side-livion.jpg);" role="img" aria-label="리비온 앱 화면"></div>
+						<div class="mp-body">
+							<div class="fp-meta"><span>2026.09 - 진행 중</span><span class="fp-context">모두의창업</span></div>
+							<h4>리비온 - 라이브 커머스 경매 플랫폼</h4>
+							<p>팔리지 않고 버려지는 떨이 상품을 라이브 방송 경매로 판매하는 서비스입니다.</p>
+							<p>Flutter 1명(본인), BE 1명, 디자인 외주 1명. 홈, 라이브 방송, 채팅·입찰 현황 패널 등 10개 기능 화면을 만들었고, Figma 색상·글꼴을 코드로 옮겨 화면에서 임의의 색을 쓰면 테스트가 실패하도록 했습니다. 서버 API 전이라 임시 데이터로 시연했습니다.</p>
+							<ul class="chip-list"><li>Flutter</li><li>Riverpod 3</li><li>freezed</li><li>sliding_up_panel</li></ul>
+							<div class="fp-links"><a class="btn btn-outline-secondary px-3 py-2" target="_blank" href="https://github.com/SongsBy/LIvion_FE">GitHub</a></div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18 shadow">
-						<div class="text">
-							<strong class="number" data-number="7">0</strong>
-							<span>Flutter 앱 프로젝트</span>
+				<div class="col-lg-4 col-md-6 d-flex mb-4 ftco-animate">
+					<div class="mini-project">
+						<div class="mp-image" style="background-image: url(images/side-bulchimbeon.jpg);" role="img" aria-label="불침번 서비스 화면"></div>
+						<div class="mp-body">
+							<div class="fp-meta"><span>2026.08</span><span class="fp-context">멋쟁이사자처럼 해커톤 · 트랙상</span></div>
+							<h4>불침번 - 비동기 Q&amp;A 협업 서비스</h4>
+							<p>시차가 큰 글로벌 팀을 위해 한국어 질문에 영어 프로젝트 문서를 근거로 답하고, 확신이 부족하면 담당자에게 넘기는 웹 서비스입니다.</p>
+							<p>프론트엔드 팀원으로 프로젝트 대시보드(Figma → React)와 공식 Q&amp;A·교훈·지표 페이지, API 어댑터를 만들었습니다.</p>
+							<ul class="chip-list"><li>React 19</li><li>TypeScript</li><li>Tailwind CSS</li><li>axios</li></ul>
+							<div class="fp-links"><a class="btn btn-outline-secondary px-3 py-2" target="_blank" href="https://github.com/LetsMakeTrouble/bulchimbeon-frontend">GitHub</a></div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18 shadow">
-						<div class="text">
-							<strong class="number" data-number="16">0</strong>
-							<span>velog 기술 블로그 글</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18 shadow">
-						<div class="text">
-							<strong class="number" data-number="5">0</strong>
-							<span>참여한 프로그램</span>
+				<div class="col-lg-4 col-md-6 d-flex mb-4 ftco-animate">
+					<div class="mini-project">
+						<div class="mp-image mp-placeholder" aria-hidden="true"><span>Remind</span></div>
+						<div class="mp-body">
+							<div class="fp-meta"><span>2025.09</span><span class="fp-context">구름톤 유니브 해커톤</span></div>
+							<h4>Remind - 감정 기반 모임 추천 앱</h4>
+							<p>오늘의 감정 컬러에 맞는 피드백과 반경 3km 안의 모임을 연결해 주는 앱입니다. 고른 감정 색에 따라 앱 테마가 바뀝니다.</p>
+							<p>Flutter 앱 담당. 감정 색 테마 화면과 주변 모임을 지도로 보여주는 화면을 구현했습니다.</p>
+							<ul class="chip-list"><li>Flutter</li><li>Dio</li><li>GetIt</li><li>Google Maps</li></ul>
+							<div class="fp-links"><a class="btn btn-outline-secondary px-3 py-2" target="_blank" href="https://github.com/SongsBy/9roomthonUniv-hackathon98FE">GitHub</a></div>
 						</div>
 					</div>
 				</div>
@@ -154,8 +272,111 @@
 		</div>
 	</section>
 
+	<section class="ftco-section ftco-no-pt" id="skills-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Skills</h1>
+					<h2 class="mb-4">기술과 사용 경험</h2>
+					<p>숙련도 숫자 대신, 각 기술로 무엇을 만들고 어떤 문제를 해결했는지 적었습니다.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 d-flex mb-4 ftco-animate">
+					<div class="skill-card">
+						<h3>Flutter / Dart</h3>
+						<div class="skill-where">산돌이 · 식사부장관 · 리비온 · 다이버바 · Remind</div>
+						<ul>
+							<li>산돌이를 배포하고 출시 후 오류 수정과 기능 추가를 이어가고 있습니다.</li>
+							<li>식사부장관에서 고객용·사장님용 앱 2개를 한 저장소에서 함께 개발하고 있습니다.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6 d-flex mb-4 ftco-animate">
+					<div class="skill-card">
+						<h3>Riverpod · go_router</h3>
+						<div class="skill-where">식사부장관 · 리비온 · 산돌이</div>
+						<ul>
+							<li>로그인 상태를 go_router의 <code>refreshListenable</code>에 연결해, 라우터를 다시 만들지 않고 redirect만 다시 판단하는 인증 가드를 만들었습니다.</li>
+							<li>Repository를 provider로 주입해 예시 데이터와 실제 API 구현을 화면 수정 없이 바꿀 수 있게 했습니다.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6 d-flex mb-4 ftco-animate">
+					<div class="skill-card">
+						<h3>Dio · Retrofit · freezed</h3>
+						<div class="skill-where">식사부장관 · 산돌이 · 다이버바</div>
+						<ul>
+							<li>401 응답 시 토큰을 갱신하고 원래 요청을 한 번만 다시 보내는 인터셉터를 만들어 갱신 무한 반복을 막았습니다.</li>
+							<li>Dio 예외를 공통 <code>Failure</code> 타입으로 바꿔 두 앱이 같은 방식으로 에러를 처리하게 했습니다.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6 d-flex mb-4 ftco-animate">
+					<div class="skill-card">
+						<h3>Keycloak 인증 (flutter_appauth)</h3>
+						<div class="skill-where">산돌이 · 식사부장관</div>
+						<ul>
+							<li>Authorization Code + PKCE 로그인과 토큰 보안 저장을 구현했습니다.</li>
+							<li>산돌이에서 토큰 갱신이 동시에 여러 번 실행되지 않게 하고, 재시도 간격을 두어 세션 유지를 개선했습니다.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6 d-flex mb-4 ftco-animate">
+					<div class="skill-card">
+						<h3>앱 구조 · Melos</h3>
+						<div class="skill-where">식사부장관 · 산돌이 · 리비온</div>
+						<ul>
+							<li>앱 2개와 공유 패키지 2개로 모노레포를 구성하고, 패키지 사이의 순환 의존을 없앴습니다.</li>
+							<li>기능별 폴더 안에서 data / domain / presentation 계층을 나눠 화면과 API 코드를 분리했습니다.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6 d-flex mb-4 ftco-animate">
+					<div class="skill-card">
+						<h3>테스트 (flutter_test)</h3>
+						<div class="skill-where">리비온 · 식사부장관</div>
+						<ul>
+							<li>디자인 토큰 대신 색상·글자 스타일을 직접 쓰면 실패하는 테스트를 만들었습니다.</li>
+							<li>패키지로 옮긴 아이콘·폰트가 실제 앱에서 로드되는지 확인하는 회귀 테스트를 추가했습니다.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6 d-flex mb-4 ftco-animate">
+					<div class="skill-card">
+						<h3>Android</h3>
+						<div class="skill-where">학교 과제 (Java · Kotlin) · 산돌이</div>
+						<ul>
+							<li>Java와 Kotlin으로 만든 Android 과제로 앱 개발을 시작했습니다.</li>
+							<li>산돌이에서 릴리스 빌드에서만 생긴 로그인 문제를 AndroidManifest의 권한과 <code>taskAffinity</code> 설정을 고쳐 해결했습니다.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6 d-flex mb-4 ftco-animate">
+					<div class="skill-card">
+						<h3>React · TypeScript</h3>
+						<div class="skill-where">불침번 · 멋쟁이사자처럼 멘토링</div>
+						<ul>
+							<li>불침번에서 Figma 대시보드를 React로 구현하고, Q&amp;A·지표 페이지의 API 어댑터를 작성했습니다.</li>
+							<li>멋쟁이사자처럼 프론트엔드 운영진으로 Flutter와 React Native 멘토를 맡았습니다.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6 d-flex mb-4 ftco-animate">
+					<div class="skill-card">
+						<h3>Figma · Firebase · Git</h3>
+						<div class="skill-where">리비온 · 식사부장관 · 구름톤 유니브</div>
+						<ul>
+							<li>Figma 색상·글자·간격 값을 코드 디자인 토큰으로 옮겨 공통 위젯에서 사용했습니다.</li>
+							<li>구름톤 유니브 팀 프로젝트 Revoo에서 Firebase Realtime Database로 데이터를 저장하고 동기화했습니다.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-	<section class="ftco-section ftco-no-pb goto-here" id="resume-section">
+	<section class="ftco-section ftco-no-pt" id="experience-section">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3">
@@ -164,12 +385,10 @@
 							<li><a href="#page-1">Education</a></li>
 							<li><a href="#page-2">Activities</a></li>
 							<li><a href="#page-awards">Awards</a></li>
-							<li><a href="#page-3">Skills</a></li>
-							<li><a href="#page-4">Projects</a></li>
 						</ul>
 					</nav>
 				</div>
-				<div class="col-md-9" id="education-section">
+				<div class="col-md-9">
 					<div id="page-1" class="page one">
 						<h2 class="heading">Education</h2>
 						<div class="resume-wrap d-flex ftco-animate">
@@ -180,8 +399,34 @@
 								<span class="date">졸업예정</span>
 								<h2>한국공학대학교</h2>
 								<span class="position">컴퓨터공학부 소프트웨어공학과</span>
-								<p>Android(Java, Kotlin) 과제로 앱 개발을 시작해, 지금은 Flutter로 학생들을 위한 캠퍼스 생활 정보 앱 '산돌이'와
+								<p>Android(Java, Kotlin) 과제로 앱 개발을 시작해, 지금은 Flutter로 학생용 앱 '산돌이'와
 									창업 프로젝트 '식사부장관', '리비온'을 개발하고 있습니다.</p>
+							</div>
+						</div>
+					</div>
+
+					<div id="page-2" class="page two">
+						<h2 class="heading">Activities</h2>
+						<div class="resume-wrap d-flex ftco-animate">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="flaticon-ideas"></span>
+							</div>
+							<div class="text pl-3">
+								<span class="date">2026.07-현재</span>
+								<h2>모두의창업 참가</h2>
+								<span class="position">식사부장관 · 리비온 Flutter 클라이언트</span>
+								<p>QR 결제 식사 플랫폼 '식사부장관'과 라이브 커머스 경매 플랫폼 '리비온'의 Flutter 앱을 맡아 개발하고 있습니다.</p>
+							</div>
+						</div>
+						<div class="resume-wrap d-flex ftco-animate">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="flaticon-ideas"></span>
+							</div>
+							<div class="text pl-3">
+								<span class="date">2025.07-현재</span>
+								<h2>팀 산돌 Flutter 앱 담당</h2>
+								<span class="position">한국공학대학교 캠퍼스 생활 정보 앱 '산돌이'</span>
+								<p>팀원들이 운영하는 백엔드 서비스와 연동되는 Flutter 앱을 맡아 배포하고, 배포 후 유지보수를 이어가고 있습니다.</p>
 							</div>
 						</div>
 						<div class="resume-wrap d-flex ftco-animate">
@@ -208,45 +453,8 @@
 							</div>
 						</div>
 					</div>
-
-					<div id="page-2" class="page two">
-						<h2 class="heading">Activities</h2>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">출시 후-현재</span>
-								<h2>산돌이 애플리케이션 유지보수</h2>
-								<span class="position">한국공학대학교 캠퍼스 생활 정보 앱</span>
-								<p>한국공학대학교 학생들을 위한 캠퍼스 생활 정보 앱 '산돌이'를 출시한 뒤, 기능 추가와 유지보수를 이어가고 있습니다.</p>
-							</div>
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2026.07-현재</span>
-								<h2>식사부장관 개발 중</h2>
-								<span class="position">모두의창업 참가 프로젝트</span>
-								<p>식당 탐색 · QR 결제 · 식권 서비스 '식사부장관'의 Flutter 클라이언트(고객용 / 사장님용 앱)를 개발하고 있습니다.</p>
-							</div>
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2026.09-현재</span>
-								<h2>리비온 개발 중</h2>
-								<span class="position">모두의창업 참가 프로젝트</span>
-								<p>라이브 커머스 앱 '리비온'의 Flutter 프론트엔드(라이브 방송 · 채팅 · 입찰)를 개발하고 있습니다.</p>
-							</div>
-						</div>
-					</div>
 					<div id="page-awards" class="page awards">
-						<h2 id="awards-section" class="heading">Awards</h2>
+						<h2 class="heading">Awards</h2>
 						<div class="resume-wrap d-flex ftco-animate">
 							<div class="icon d-flex align-items-center justify-content-center">
 								<span class="icon-trophy"></span>
@@ -279,455 +487,6 @@
 								<span class="position">로컬 국토대장정</span>
 								<div><span class="award-badge">창업 활동을 통한 수상작</span></div>
 							</div>
-						</div>
-					</div>
-					<div id="page-3" class="page three">
-						<h2 class="heading">Skills</h2>
-						<div class="row progress-circle mb-5">
-							<div class="col-lg-4 mb-4">
-								<div class="bg-white rounded-lg shadow p-4">
-									<h2 class="h5 font-weight-bold text-center mb-4">Flutter / Dart</h2>
-
-									<!-- Progress bar 1 -->
-									<div class="progress mx-auto" data-value='90'>
-										<span class="progress-left">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<span class="progress-right">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<div
-											class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-											<div class="h2 font-weight-bold">90<sup class="small">%</sup></div>
-										</div>
-									</div>
-									<!-- END -->
-
-									<div class="row text-center mt-4">
-										<div class="col-6 border-right">
-											<div class="h4 font-weight-bold mb-0">7개</div><span
-												class="small text-gray">프로젝트</span>
-										</div>
-										<div class="col-6">
-											<div class="h4 font-weight-bold mb-0">2025~</div><span
-												class="small text-gray">사용 시작</span>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-lg-4 mb-4">
-								<div class="bg-white rounded-lg shadow p-4">
-									<h2 class="h5 font-weight-bold text-center mb-4">Android</h2>
-
-									<!-- Progress bar 1 -->
-									<div class="progress mx-auto" data-value='70'>
-										<span class="progress-left">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<span class="progress-right">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<div
-											class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-											<div class="h2 font-weight-bold">70<sup class="small">%</sup></div>
-										</div>
-									</div>
-									<!-- END -->
-
-									<div class="row text-center mt-4">
-										<div class="col-6 border-right">
-											<div class="h4 font-weight-bold mb-0">2개</div><span
-												class="small text-gray">프로젝트</span>
-										</div>
-										<div class="col-6">
-											<div class="h4 font-weight-bold mb-0">2024~</div><span
-												class="small text-gray">사용 시작</span>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-lg-4 mb-4">
-								<div class="bg-white rounded-lg shadow p-4">
-									<h2 class="h5 font-weight-bold text-center mb-4">React / Next.js</h2>
-
-									<!-- Progress bar 1 -->
-									<div class="progress mx-auto" data-value='60'>
-										<span class="progress-left">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<span class="progress-right">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<div
-											class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-											<div class="h2 font-weight-bold">60<sup class="small">%</sup></div>
-										</div>
-									</div>
-									<!-- END -->
-
-									<div class="row text-center mt-4">
-										<div class="col-6 border-right">
-											<div class="h4 font-weight-bold mb-0">2개</div><span
-												class="small text-gray">프로젝트</span>
-										</div>
-										<div class="col-6">
-											<div class="h4 font-weight-bold mb-0">2026~</div><span
-												class="small text-gray">사용 시작</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>Riverpod</h3>
-									<div class="progress">
-										<div class="progress-bar color-1" role="progressbar" aria-valuenow="85"
-											aria-valuemin="0" aria-valuemax="100" style="width:85%">
-											<span>85%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>Dio / Retrofit</h3>
-									<div class="progress">
-										<div class="progress-bar color-2" role="progressbar" aria-valuenow="85"
-											aria-valuemin="0" aria-valuemax="100" style="width:85%">
-											<span>85%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>GoRouter / freezed</h3>
-									<div class="progress">
-										<div class="progress-bar color-3" role="progressbar" aria-valuenow="80"
-											aria-valuemin="0" aria-valuemax="100" style="width:80%">
-											<span>80%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>Firebase</h3>
-									<div class="progress">
-										<div class="progress-bar color-4" role="progressbar" aria-valuenow="70"
-											aria-valuemin="0" aria-valuemax="100" style="width:70%">
-											<span>70%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>Git / GitHub</h3>
-									<div class="progress">
-										<div class="progress-bar color-5" role="progressbar" aria-valuenow="80"
-											aria-valuemin="0" aria-valuemax="100" style="width:80%">
-											<span>80%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>Figma</h3>
-									<div class="progress">
-										<div class="progress-bar color-6" role="progressbar" aria-valuenow="70"
-											aria-valuemin="0" aria-valuemax="100" style="width:70%">
-											<span>70%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div id="page-4" class="page four">
-						<h2 id="projects-section" class="heading">Projects</h2>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2025.07-운영 중</span>
-								<div class="project-title d-flex flex-wrap align-items-center">
-									<h2>산돌이 - 한국공학대학교 학생복지 앱</h2>
-									<a class="btn btn-outline-secondary" target="_blank" href="https://github.com/SongsBy/Sandori">Github</a>
-								</div>
-								<span class="position">한국공학대학교 학생용 서비스 · 출시 후 유지보수</span>
-								<p class="project-summary">학생들의 편한 학교 생활을 위해 오늘의 학식, 빈 강의실, 셔틀버스 조회까지 한 곳에 모은 앱입니다.</p>
-								<div class="project-block">
-									<div class="project-label">기술 스택</div>
-									<ul class="tech-stack">
-										<li>Flutter</li>
-										<li>Riverpod</li>
-										<li>Dio</li>
-										<li>Retrofit</li>
-										<li>GoRouter</li>
-										<li>freezed</li>
-										<li>Naver Map</li>
-										<li>Keycloak</li>
-									</ul>
-								</div>
-								<div class="project-block">
-									<div class="project-label">주요 기능</div>
-									<ul class="feature-list">
-										<li>오늘의 학식 메뉴 조회</li>
-										<li>셔틀버스 시간표 조회</li>
-										<li>지도 기반 빈 강의실 현황</li>
-										<li>조직도 · 연락처 조회와 바로 전화 걸기</li>
-										<li>Keycloak 로그인 · 회원가입 (웹 페이지 UI 직접 제작)</li>
-									</ul>
-								</div>
-								<div class="project-point"><b>구현 포인트</b> · Feature-First + 3-Layer(data / domain / presentation) 구조로 기능별 모듈을 분리했습니다.</div>
-							</div>
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2026.09-진행 중</span>
-								<div class="project-title d-flex flex-wrap align-items-center">
-									<h2>리비온 - 라이브 커머스 경매 플랫폼</h2>
-									<a class="btn btn-outline-secondary" target="_blank" href="https://github.com/SongsBy/LIvion_FE">Github</a>
-								</div>
-								<span class="position">모두의창업 참가 프로젝트 · Flutter 프론트엔드</span>
-								<p class="project-summary">떨이 상품 폐기 문제를 개선하기 위한 라이브 커머스 경매 플랫폼입니다.</p>
-								<div class="project-block">
-									<div class="project-label">기술 스택</div>
-									<ul class="tech-stack">
-										<li>Flutter</li>
-										<li>Riverpod 3</li>
-										<li>riverpod_generator</li>
-										<li>freezed</li>
-										<li>sliding_up_panel</li>
-									</ul>
-								</div>
-								<div class="project-block">
-									<div class="project-label">주요 기능</div>
-									<ul class="feature-list">
-										<li>홈: 공식 방송 · 인기 급상승 · 마감 임박 라이브 카드</li>
-										<li>라이브 방송 화면</li>
-										<li>실시간 채팅 패널</li>
-										<li>입찰현황 패널 (현재가 · 참여 인원 · 입찰 추이 차트 · 순위)</li>
-									</ul>
-								</div>
-								<div class="project-point"><b>구현 포인트</b> · Figma 디자인 토큰을 코드로 옮긴 디자인 시스템을 만들고, 화면에서 색 · 글자 스타일을 직접 쓰면 실패하는 테스트로 일관성을 지켰습니다.</div>
-							</div>
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2026.07-진행 중</span>
-								<div class="project-title d-flex flex-wrap align-items-center">
-									<h2>식사부장관 - QR 결제 기반 식사 플랫폼</h2>
-									<a class="btn btn-outline-secondary" target="_blank" href="https://github.com/SongsBy/SIksabu_FE">Github</a>
-								</div>
-								<span class="position">모두의창업 참가 프로젝트 · Flutter 클라이언트</span>
-								<p class="project-summary">공단 근처의 식당을 찾고 QR 기반으로 결제하는 식사 플랫폼입니다.</p>
-								<div class="project-block">
-									<div class="project-label">기술 스택</div>
-									<ul class="tech-stack">
-										<li>Flutter</li>
-										<li>Riverpod 3</li>
-										<li>freezed</li>
-										<li>Dio</li>
-										<li>Retrofit</li>
-										<li>go_router</li>
-										<li>Keycloak</li>
-										<li>Melos</li>
-									</ul>
-								</div>
-								<div class="project-block">
-									<div class="project-label">주요 기능</div>
-									<ul class="feature-list">
-										<li>지도 기반 식당 탐색 · 카테고리 필터</li>
-										<li>QR 결제 (카메라 스캔 · 갤러리 QR · 내 QR 표시)</li>
-										<li>식권 사용 · 예약 현황 · 거래내역</li>
-										<li>고객용 / 사장님용 앱 분리</li>
-									</ul>
-								</div>
-								<div class="project-point"><b>구현 포인트</b> · 앱 2개와 공유 패키지(core, ui_kit)로 나눈 Melos 모노레포를 설계하고, go_router redirect로 인증 가드를 구현했습니다.</div>
-							</div>
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2026.03-진행 중</span>
-								<div class="project-title d-flex flex-wrap align-items-center">
-									<h2>다이버바 - 반품률 감소를 위한 가상피팅 앱</h2>
-									<a class="btn btn-outline-secondary" target="_blank" href="https://github.com/SongsBy/Capstone_FE">Github</a>
-								</div>
-								<span class="position">2026 한국공학대학교 캡스톤 디자인</span>
-								<p class="project-summary">온라인 쇼핑의 반품률을 줄이기 위해, 옷을 사기 전에 가상으로 입어 볼 수 있는 앱입니다.</p>
-								<div class="project-block">
-									<div class="project-label">기술 스택</div>
-									<ul class="tech-stack">
-										<li>Flutter</li>
-										<li>Riverpod (MVVM)</li>
-										<li>Dio</li>
-										<li>Retrofit</li>
-										<li>SecureStorage</li>
-										<li>Kakao · Google Login</li>
-									</ul>
-								</div>
-								<div class="project-block">
-									<div class="project-label">주요 기능</div>
-									<ul class="feature-list">
-										<li>가상 피팅 결과 확인 · 저장</li>
-										<li>옷장: 상의 · 하의 · 아우터 · 신발 분류와 컬렉션</li>
-										<li>AI 추천 · AI 채팅 검색</li>
-										<li>전신 · 상반신 촬영 가이드</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2026.08</span>
-								<div class="project-title d-flex flex-wrap align-items-center">
-									<h2>불침번 - 자고 있는 중에도 협업은 계속</h2>
-									<a class="btn btn-outline-secondary" target="_blank" href="https://github.com/LetsMakeTrouble/bulchimbeon-frontend">Github</a>
-								</div>
-								<span class="position">2026 멋쟁이사자처럼 해커톤 · 82team(사고한번쳐?) · 프론트엔드</span>
-								<p class="project-summary">시차가 큰 글로벌 팀을 위한 비동기 Q&amp;A 협업 서비스입니다. 한국어 질문을 받으면 영어 프로젝트 문서에서 근거를 찾아 답하고, 확신이 부족하면 담당자에게 넘깁니다.</p>
-								<div class="project-block">
-									<div class="project-label">기술 스택</div>
-									<ul class="tech-stack">
-										<li>React 19</li>
-										<li>TypeScript</li>
-										<li>Vite</li>
-										<li>Tailwind CSS v4</li>
-										<li>React Router</li>
-										<li>axios</li>
-										<li>SSE</li>
-									</ul>
-								</div>
-								<div class="project-block">
-									<div class="project-label">주요 기능</div>
-									<ul class="feature-list">
-										<li>질문자 채팅: 한국어 질문 → 영어 문서 근거 기반 답변</li>
-										<li>매칭률에 따른 즉답 · 확인 대기 · 보류 분류</li>
-										<li>담당자 확인함: 확인 대기 카드 큐 처리</li>
-										<li>확정된 답을 공식 Q&amp;A로 편입해 재사용</li>
-										<li>문서 버전 관리 · 대시보드 · 지표 · 실시간 알림</li>
-									</ul>
-								</div>
-								<div class="project-point"><b>구현 포인트</b> · domain / application / infrastructure 계층으로 업무 규칙을 React · axios와 분리하고, Figma 컬러 변수를 Tailwind 테마로 1:1 이식했습니다.</div>
-							</div>
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2025.09</span>
-								<div class="project-title d-flex flex-wrap align-items-center">
-									<h2>Remind - 감정 기반 소셜 모임 추천 앱</h2>
-									<a class="btn btn-outline-secondary" target="_blank" href="https://github.com/SongsBy/9roomthonUniv-hackathon98FE">Github</a>
-								</div>
-								<span class="position">구름톤 유니브 해커톤</span>
-								<p class="project-summary">오늘의 감정 컬러에 맞는 피드백과 주변 모임을 연결해 주는 감정 · 소셜 헬스케어 앱입니다.</p>
-								<div class="project-block">
-									<div class="project-label">기술 스택</div>
-									<ul class="tech-stack">
-										<li>Flutter</li>
-										<li>Dio</li>
-										<li>GetIt</li>
-										<li>Google Maps</li>
-										<li>Geolocator</li>
-									</ul>
-								</div>
-								<div class="project-block">
-									<div class="project-label">주요 기능</div>
-									<ul class="feature-list">
-										<li>감정 컬러 선택에 따른 UI 테마 변경</li>
-										<li>감정 설문 · 마음 프로필</li>
-										<li>오늘의 피드백 카드</li>
-										<li>반경 3km 모임 탐색</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<section class="ftco-section ftco-project">
-		<div class="container-fluid px-md-0">
-			<div class="row no-gutters justify-content-center pb-5">
-				<div class="col-md-12 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Projects</h1>
-					<h2 id="side-projects-section" class="mb-4">Side Projects</h2>
-					<p>기획부터 출시까지, Flutter로 직접 만들어 온 앱들입니다.</p>
-				</div>
-			</div>
-			<div class="row no-gutters">
-				<div class="col-md-6">
-					<div class="project img project-banner ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/side-sandori.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a target="_blank" href="https://github.com/SongsBy/Sandori">산돌이 - 한국공학대학교 학생복지 앱</a></h3>
-							<span>Flutter · Riverpod · GoRouter · 네이버 지도 · 출시 후 유지보수</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="project img project-banner ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/side-livion.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a target="_blank" href="https://github.com/SongsBy/LIvion_FE">리비온 - 라이브 커머스 경매 플랫폼</a></h3>
-							<span>Flutter · Riverpod · freezed · 모두의창업</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="project img project-banner ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/side-siksabu.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a target="_blank" href="https://github.com/SongsBy/SIksabu_FE">식사부장관 - QR 결제 기반 식사 플랫폼</a></h3>
-							<span>Flutter · Riverpod · go_router · 모두의창업</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="project img project-banner ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/side-diverba.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a target="_blank" href="https://github.com/SongsBy/Capstone_FE">다이버바 - 반품률 감소를 위한 가상피팅 앱</a></h3>
-							<span>Flutter · Riverpod · Dio + Retrofit · 2026 캡스톤 디자인</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="project img project-banner ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/side-bulchimbeon.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a target="_blank" href="https://github.com/LetsMakeTrouble/bulchimbeon-frontend">불침번 - 비동기 Q&amp;A 협업 서비스</a></h3>
-							<span>React · TypeScript · Tailwind CSS · 2026 멋쟁이사자처럼 해커톤</span>
 						</div>
 					</div>
 				</div>
